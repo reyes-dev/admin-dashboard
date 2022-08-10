@@ -1,4 +1,15 @@
-* { margin: 0; padding: 0; }
+@font-face {
+  font-family: 'Roboto';
+  src: url('./fonts/Roboto/Roboto-Thin.woff') format('woff'), url('./fonts/Roboto/Roboto-Thin.ttf') format('truetype');
+  font-weight: 100;
+  font-style: normal;
+}
+
+* { margin: 0; padding: 0;}
+
+body, html {
+  font-family:'Roboto', Arial, Helvetica, sans-serif;
+}
 
 .container {
   display: grid;
@@ -6,10 +17,17 @@
   grid-template-rows: repeat(5, 1fr);
   height: 100vh;
   width: 100vw;
+  background-color: #818cf8;
 }
 
 .header {
-  background-color: #818cf8;
+  display: grid;
+  grid-template-columns: 2fr .8fr;
+  grid-template-rows: 1.5fr 1fr .4fr;
+  z-index: 1;
+  background-color: #a5b4fc;
+  box-shadow: 0px 3px 3px #6366f1;
+  height: 70%;
 }
 
 .sidebar {
@@ -18,7 +36,6 @@
   gap: 48px;
   color: #312e81;
   font-size: 16px;
-  font-family: Helvetica;
   font-weight: bold;
   background-color: #6366f1;
   grid-row: 1 / -1;
@@ -28,7 +45,6 @@
 .sidebar a {
   color: #312e81;
   font-size: 20px;
-  font-family: Helvetica;
   font-weight: 500;
   text-decoration: none;
 }
@@ -47,7 +63,7 @@
   flex: 0.50 0 0;
 }
 
-.sidebar img {
+img {
   height: 20px;
 }
 
@@ -58,7 +74,93 @@
 }
 
 .main_content {
-  background-color: #a5b4fc;
   grid-column: 2;
   grid-row: 2 / -1;
+}
+
+input[type="image"] {
+  height: 25px;
+}
+
+img[src="img/chick.png"] {
+  height: 40px;
+  background-color: pink;
+  border-radius: 50%;
+}
+
+input[type="search"] {
+  background-color: #eef2ff;
+  border: 1px solid #eef2ff;
+  width: 80%;
+  height: 30px;
+  border-radius: 25px;
+  outline: none;
+}
+
+.search {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+label {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+form {
+  flex-grow: 1;
+}
+
+.acc {
+  display: grid;
+  grid-template-columns: 1fr 1fr 8fr;
+  place-self: center;
+  gap: 32px;
+}
+
+.acc p:first-of-type {
+  font-size: xx-large;
+}
+
+.acc input[type="image"] {
+  place-self: center;
+}
+
+.acc_info {
+  display: grid;
+  grid-template-columns: 1fr 3fr;
+  grid-template-rows: 1fr 1fr;
+}
+
+.acc_info img[src="img/chick.png"] {
+  height: 120px;
+  grid-row: 1 / -1;
+  align-self: center;
+  justify-self: center;
+}
+
+.acc_info p {
+  font-size: xx-large;
+}
+
+
+.buttons {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr .5fr;
+  align-items: center;
+  gap: 12px;
+}
+
+button[type="button"] {
+  border: .1px solid #818cf8;
+  text-decoration: none;
+  background-color: #818cf8;
+  color: white;
+  font-size: 16px;
+  font-weight: bold;
+  border-radius: 30px;
+  text-align: center;
+  height: 40%;
 }
