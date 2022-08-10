@@ -131,7 +131,7 @@ form {
 }
 
 .acc_info img[src="img/chick.png"] {
-  height: 60px;
+  height: 160px;
   grid-row: 1 / -1;
   align-self: center;
   justify-self: end;
@@ -166,8 +166,6 @@ button[type="button"] {
 .main_content {
   grid-column: 2;
   grid-row: 2 / -1;
-<<<<<<< HEAD
-=======
 }
 
 input[type="image"] {
@@ -227,10 +225,10 @@ form {
 }
 
 .acc_info img[src="img/chick.png"] {
-  height: 120px;
+  height: 60px;
   grid-row: 1 / -1;
   align-self: center;
-  justify-self: center;
+  justify-self: end;
 }
 
 .acc_info p {
@@ -242,7 +240,7 @@ form {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr .5fr;
   align-items: center;
-  gap: 12px;
+  gap: 18px;
 }
 
 button[type="button"] {
@@ -254,6 +252,6 @@ button[type="button"] {
   font-weight: bold;
   border-radius: 30px;
   text-align: center;
-  height: 40%;
->>>>>>> 2bf8be97479432f4a6be281d4039958dc5595730
+  height: 60%;
+  width: 120%;
 }
