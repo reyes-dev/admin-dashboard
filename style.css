@@ -210,8 +210,8 @@ form {
   gap: 32px;
 }
 
-.acc p:first-of-type {
-  font-size: xx-large;
+.acc p {
+  align-self: center;
 }
 
 .acc input[type="image"] {
